@@ -2,11 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
-    height: 40px;
-    width: 40px;
+    border-radius: 30px;
     font-size: .9rem;
-    margin: 5px
+    margin: 0 6px 6px 6px;
+    border: none;
+}
+.button.double {
+   grid-column: span 2;
 }
 
 .operation {
