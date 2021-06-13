@@ -4,10 +4,11 @@ import './css/index.css';
 import Calculator from './components/Calculator';
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <h1>Calculadora</h1>
-    <Calculator />
+    <Calculator></Calculator>
   </React.StrictMode>,
   document.getElementById('root')
 );
