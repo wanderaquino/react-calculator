@@ -4,10 +4,12 @@
 }
 
 body {
-  font-family: "RobotoMono" Ubuntu;
+  font-family: RobotoMono,Ubuntu;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+  background: linear-gradient(to right, rgb(83,106,118), rgb(31,46,73));
 }
