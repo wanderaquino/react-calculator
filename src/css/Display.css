@@ -1,0 +1,15 @@
+.display {
+    display: flex;
+    height: 4rem;
+    background: black;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+.display-value {
+    color: white;
+    font-size: 2.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
