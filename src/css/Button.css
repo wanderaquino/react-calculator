@@ -10,12 +10,12 @@
 }
 
 .operation {
-    background: whitesmoke;
-    color: black;
-}
-.function {
     background: orange;
     color: white;
+}
+.function {
+    background: whitesmoke;
+    color: black;
 }
 .number {
     background: gray;
