@@ -4,25 +4,17 @@ import "../css/Button.css";
 export default class Button extends React.Component {
     constructor(props) {
         super(props);
-        this.resolveButtonType = this.resolveButtonType.bind(this);
     }
     state = {
         value: this.props.value,
         type: this.props.type,
+        double: this.props.double
     }
-    resolveButtonType() {
-        const primaryType = "button";
 
-        switch (this.props.type) {
-            case "OP": {return `${primaryType} operation`}
-            case "FN": {return `${primaryType} function`}
-            case "NM": {return `${primaryType} number`}
-        }
-    }
     render () {
     return (
-        <div className={this.resolveButtonType(this.props.type)}>
-            <span className="button-value">{this.props.value}</span>
-        </div>
+        <button className={`button ${this.props.type} ${this.props.double}`} onClick={e => console.log(e.target.value)}>
+            {this.props.value}
+        </button>
     )}
 };
