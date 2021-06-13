@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    font-size: .9rem;
+    margin: 5px
+}
+
+.operation {
+    background: whitesmoke;
+    color: black;
+}
+.function {
+    background: orange;
+    color: white;
+}
+.number {
+    background: gray;
+    color: white;
+}
