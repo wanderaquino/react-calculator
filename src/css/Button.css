@@ -7,6 +7,11 @@
     margin: 0 6px 6px 6px;
     border: none;
 }
+
+.button:active {
+    background-color: #ccc;
+}
+
 .button.double {
    grid-column: span 2;
 }
