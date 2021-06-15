@@ -2,9 +2,6 @@ import React from "react";
 import "../css/Button.css";
 
 export default class Button extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     state = {
         value: this.props.value,
         type: this.props.type,
@@ -13,7 +10,10 @@ export default class Button extends React.Component {
 
     render () {
     return (
-        <button className={`button ${this.props.type} ${this.props.double}`} onClick={e => console.log(e.target.value)}>
+        <button 
+            className={`button ${this.props.type} ${this.props.double ? 'double' : '' }`}
+            onClick={e => this.props.click && this.props.click(this.props.value)}
+        >
             {this.props.value}
         </button>
     )}
